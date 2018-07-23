@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -7,7 +7,8 @@
     padding: 0;
     margin: 0;
 }
-.active{
+
+.active {
     padding: 0;
     margin: 0;
 }
@@ -16,6 +17,7 @@
     float: left;
     display: block;
 }
+
 .active li {
     float: left;
     display: block;
@@ -23,68 +25,75 @@
 
 .active li a {
     display: block;
-    color:#fff;
+    color: #fff;
     text-decoration: none;
     padding: 10px;
     margin: 1px;
     background: #444;
     font-size: 16px;
-}
-.menu li a {
-    display: block;
-    color:#ffffff;
-    text-decoration: none;
-    padding: 10px;
-    margin: 1px;
-    background: #444;
-    font-size: 16px;
+    border-radius: 10px;
 }
 
+.menu li a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    margin: 1px;
+    background: #444;
+    font-size: 16px;
+    border-radius: 10px;
+}
 
 .menu li a:hover {
     background: #222;
     font-size: 17px;
-    transition:.5s;
+    transition: .5s;
 }
 
 .active li a:hover {
     background: #222;
     font-size: 17px;
-    transition:.5s;
+    transition: .5s;
 }
 
-.menu-icon{
+.menu-icon {
     text-align: right;
     display: none;
     margin: 10px;
 }
 
-svg{
+svg {
     height: 22px;
     width: 28px;
 }
 
 #Core {
-    fill:#444;
+    fill: #444;
 }
 
 @media (max-width: 600px) {
-    .menu-icon{
+    .menu-icon {
         display: block;
     }
-    .menu  li{
+
+    .menu li {
         display: none;
-        float:none;
+        float: none;
     }
-    .active li{
+
+    .active li {
         display: block;
         float: none;
         text-align: center;
     }
-}
 
-/*@media (min-width: 600px) {*/
-    /*.menu li{*/
-        /*float:left;*/
-    /*}*/
-/*}*/
+    .active li a {
+        font-size: 23px;
+        height: 30px;
+    }
+    .active li a:hover {
+        font-size: 27px;
+        height: 30px;
+    }
+}
