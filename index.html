@@ -9,10 +9,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="header">
     <nav class="nav">
         <div class="menu-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 18 12"><title/><desc/><defs/><g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1"><g fill="#ff8800" id="Core" transform="translate(-87.000000, -342.000000)"><g id="menu" transform="translate(87.000000, 342.000000)"><path d="M0,12 L18,12 L18,10 L0,10 L0,12 L0,12 Z M0,7 L18,7 L18,5 L0,5 L0,7 L0,7 Z M0,0 L0,2 L18,2 L18,0 L0,0 L0,0 Z" id="Shape"/></g></g></g></svg>
-                    </div>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 18 12"><title/>
+                <desc/>
+                <defs/>
+                <g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1">
+                    <g fill="#ff8800" id="Core" transform="translate(-87.000000, -342.000000)">
+                        <g id="menu" transform="translate(87.000000, 342.000000)">
+                            <path d="M0,12 L18,12 L18,10 L0,10 L0,12 L0,12 Z M0,7 L18,7 L18,5 L0,5 L0,7 L0,7 Z M0,0 L0,2 L18,2 L18,0 L0,0 L0,0 Z" id="Shape"/>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </div>
         <ul class="menu">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
@@ -20,22 +32,67 @@
             <li><a href="#">Info</a></li>
             <li><a href="#">Contacts</a></li>
         </ul>
-
     </nav>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script>
-        var i = 0;
-        $('.menu-icon').click(function () {
-            i++;
-            if(i%2===0){
-                $('.active').addClass('menu');
-                $('.active').removeClass('active');
-            }
-            else{
-                $('.menu').addClass('active');
-                $('.menu').removeClass('menu');
-            }
-        })
-    </script>
+</div>
+
+<div class="main active menu">
+    <div class="bl fl1">
+        <div class="image"><img src="images/cat1.jpg" alt=""></div>
+        <div class="text">
+            <h3>Lorem ipsum dolor.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <a href="#" class="button">Читать...</a></div>
+    </div>
+    <div class="bl fl2">
+        <div class="image"><img src="images/cat2.jpg" alt=""></div>
+        <div class="text">
+            <h3>Harum, nihil, quos?</h3>
+            <p>Asperiores aspernatur ea hic ipsa ipsam praesentium.</p>
+            <a href="#" class="button">Читать...</a></div>
+    </div>
+    <div class="bl fl3">
+        <div class="image"><img src="images/cat3.jpg" alt=""></div>
+        <div class="text">
+            <h3>Alias, aut esse!</h3>
+            <p>Aliquid exercitationem expedita in minus quo voluptates!</p>
+            <a href="#" class="button">Читать...</a></div>
+    </div>
+    <div class="bl fl4">
+        <div class="image"><img src="images/cat4.jpg" alt=""></div>
+        <div class="text">
+            <h3>Consectetur, magnam voluptas.</h3>
+            <p>Distinctio eligendi, rem? Dignissimos hic modi voluptates!</p>
+            <a href="#" class="button">Читать...</a></div>
+    </div>
+    <div class="bl fl5">
+        <div class="image"><img src="images/cat5.jpg" alt=""></div>
+        <div class="text">
+            <h3>Asperiores, culpa, dolor?</h3>
+            <p>Cumque dicta harum hic optio placeat quos?</p>
+            <a href="#" class="button">Читать...</a></div>
+    </div>
+    <div class="bl fl6">
+        <div class="image"><img src="images/cat6.jpg" alt=""></div>
+        <div class="text">
+            <h3>Odit, similique veritatis?</h3>
+            <p>Amet dolore excepturi explicabo mollitia optio perspiciatis!</p>
+            <a href="#" class="button">Читать...</a></div>
+    </div>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+    var i = 0;
+    $('.menu-icon').click(function () {
+        i++;
+        if (i % 2 === 0) {
+            $('.active').addClass('menu');
+            $('.active').removeClass('active');
+        }
+        else {
+            $('.menu').addClass('active');
+            $('.menu').removeClass('menu');
+        }
+    })
+</script>
 </body>
 </html>
